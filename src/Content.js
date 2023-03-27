@@ -12,6 +12,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 // import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 // import HotelIcon from '@mui/icons-material/Hotel';
 // import RepeatIcon from '@mui/icons-material/Repeat';
+// import img1 from '../public/Research-paper1.png';
 import Typography from '@mui/material/Typography';
 
 export const Content = () => {
@@ -71,7 +72,7 @@ export const Content = () => {
                         <div className='row'>
                             <div className='col-sm-12 col-md-6 col-lg-4'>
                                 <div className="card" style={{ width: "100%", marginTop: '15px' }}>
-                                    <img src='Research-Paper1.png' className='card-img-top' />
+                                    <img src='/Research-Paper1.png' className='card-img-top' />
                                     <div className="card-body">
                                         <span className='card-text' style={{ fontSize: '1.2rem' }}>
                                             Electrochemomechanics of lithium dendrite growth
@@ -82,7 +83,7 @@ export const Content = () => {
                             </div>
                             <div className='col-sm-12 col-md-6 col-lg-4' >
                                 <div className="card" style={{ width: "100%", marginTop: '15px' }}>
-                                    <img src='Research-Paper1.png' className='card-img-top' />
+                                    <img src='/Research-Paper1.png' className='card-img-top' />
                                     <div className="card-body">
                                         <span className='card-text' style={{ fontSize: '1.2rem' }}>
                                             Electrochemomechanics of lithium dendrite growth
@@ -93,7 +94,7 @@ export const Content = () => {
                             </div>
                             <div className='col-sm-12 col-md-6 col-lg-4'>
                                 <div className="card" style={{ width: "100%", marginTop: '15px' }}>
-                                    <img src='Research-Paper1.png' className='card-img-top' />
+                                    <img src='/Research-Paper1.png' className='card-img-top' />
                                     <div className="card-body">
                                         <span className='card-text' style={{ fontSize: '1.2rem' }}>
                                             Electrochemomechanics of lithium dendrite growth
