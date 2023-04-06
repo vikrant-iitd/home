@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { CgDarkMode, CgMenu } from 'react-icons/cg';
 import { BsLinkedin, BsTwitter } from 'react-icons/bs'
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     const [isScrolled, setScrolled] = useState(0);
@@ -26,7 +27,9 @@ export const Header = () => {
                         <div className='header-space'>
 
                             <div className={'home-logo'+shrinkLogo}>
+                                <Link to='/' style={{textDecoration:'none',color:'black'}}>
                                 KS Vikrant
+                                </Link>
                             </div>
                             <div className='navbar-menu'>
                                 <div className='navbar-item'>

@@ -14,6 +14,8 @@ import TimelineContent from '@mui/lab/TimelineContent';
 // import RepeatIcon from '@mui/icons-material/Repeat';
 // import img1 from '../publichttps://raw.githubusercontent.com/pallavsemwal/ks_vikrant/main/public/Research-paper1.png';
 import Typography from '@mui/material/Typography';
+import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export const Content = () => {
     return (
@@ -61,8 +63,12 @@ export const Content = () => {
                             Publications
                         </div>
                         <div>
+
+                       <Link to='/publications' style={{color:'black',textDecoration:'none'}}>
                             Read More
                             <BsArrowRight style={{ marginLeft: '10px' }} />
+                       </Link>                        <div> 
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -112,6 +118,7 @@ export const Content = () => {
                         <div style={{ fontSize: '1.3rem' }}>
                             Awards And Honors
                         </div>
+                        
                         {/* <div>
                             <BsArrowRight style={{ marginLeft: '10px' }} />
                         </div> */}
