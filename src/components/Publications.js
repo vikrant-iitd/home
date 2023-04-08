@@ -11,7 +11,7 @@ function Publications() {
         <div className='container'>
             <div className='row' style={{justifyContent:'center'}}>
                 <div className='col-md-4 col-sm-12'>
-<h1 className='mainCompH1' style={{color:'white'}}>Publications</h1>
+<h1 className='mainCompH1' style={{color:'white'}}><span style={{color:'#0883c1'}}>Publi</span>cations</h1>
 
                 </div>
             </div>
@@ -35,7 +35,7 @@ function Publications() {
                 </div>
                 <br></br>
                 <Typography variant='h4'>
-                2022
+                <span style={{color:'#0883c1'}}>20</span>22
                 </Typography>
                 <br></br>
                 <Typography className='publicationName' >
@@ -70,7 +70,7 @@ Electrochemical Society, 169, 040520, (2022).
                 </Typography>
                 <br></br><br></br>
                 <Typography variant='h4'>
-                2021
+                <span style={{color:'#0883c1'}}>20</span>21
                 </Typography><br></br>
                 <Typography className='publicationName'>
               1.  “Core-shell metallic alloy nanopillars-in-dielectric hybrid metamaterials
@@ -100,7 +100,7 @@ H. Wang, A. Mukherjee, J. S. Okasinski, T. Tsakalakos, Acta Materialia, 204,
                 </Typography><br></br>
                 <br></br>
                 <Typography variant='h4'>
-                2020
+                <span style={{color:'#0883c1'}}>20</span>20
                 </Typography><br></br>
                 <Typography className='publicationName'>
           1. . “Electrochemically driven abnormal grain growth in ionic ceramicss,” K.
@@ -135,7 +135,7 @@ H. Wang, R. E. García, Nature Partner Journal: Computational Materials, 6,
                
                 <br></br>
                 <Typography variant='h4'>
-                2019
+                <span style={{color:'#0883c1'}}>20</span>19
                 </Typography><br></br>
                 <Typography className='publicationName'>
     1. “Electrochemomechanics of lithium dendrite growth,” A. Jana, S. I. Woo,
@@ -149,7 +149,7 @@ Materials, 5, 24, (2019). <span style={{color:'#ef405e'}}>IF: 9.651</span>
                 </Typography><br></br>
                 <br></br>
                 <Typography variant='h4'>
-                2018
+                <span style={{color:'#0883c1'}}>20</span>18
                 </Typography><br></br>
                 <Typography className='publicationName'>
   1.  “Charged Interfaces: Electrochemical and Mechanical Effects,”<b> K. S. N.
@@ -166,7 +166,7 @@ Nature Communications, 9, 2063, (2018). <span style={{color:'#ef405e'}}>IF: 17.6
                 </Typography><br></br>
                 <br></br>
                 <Typography variant='h4'>
-                2015
+                <span style={{color:'#0883c1'}}>20</span>15
                 </Typography><br></br>
                 <Typography className='publicationName'>
  1. “Development and evaluation of SUS 304H—IN 617 welds for advanced
@@ -178,7 +178,7 @@ Ravibharath, K. Singh, Materials Science and Engineering A, 642, 32–41,
                 </Typography><br></br>
                 <br></br>
                 <Typography variant='h4'>
-                2013
+                <span style={{color:'#0883c1'}}>20</span>13
                 </Typography><br></br>
                 <Typography className='publicationName'>
  1. “Estimation of residual life of boiler tubes using steam side oxide scale
@@ -206,7 +206,7 @@ Analysis, 1, 103–109, (2013). <span style={{color:'#ef405e'}}>IF: 1.891</span>
 </span>                </Typography><br></br>
                 <br></br>
                 <Typography variant='h4'>
-                2012
+                <span style={{color:'#0883c1'}}>20</span>12
                 </Typography><br></br>
                 <Typography className='publicationName'>
 1. “Characterization of fireside corroded sections of boiler tubes,” A. H. V.

@@ -59,13 +59,13 @@ export const Content = () => {
 
                 <div className='main-container'>
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'end' }} >
-                        <div style={{ fontSize: '20px' }}>
-                            Publications
+                        <div style={{ fontSize: '28px',fontWeight:'600' }}>
+                            <span style={{color:'#0883c1'}}>Pub</span>lications
                         </div>
                         <div>
 
-                       <Link to='/publications' style={{color:'black',textDecoration:'none'}}>
-                            Read More
+                       <Link to='/publications' style={{color:'black',textDecoration:'none',fontSize:'19px'}}>
+                       Read More
                             <BsArrowRight style={{ marginLeft: '10px' }} />
                        </Link>                        <div> 
                         </div>
@@ -115,8 +115,8 @@ export const Content = () => {
                 </div>
                 <div className='main-container'>
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'end' }} >
-                        <div style={{ fontSize: '1.3rem' }}>
-                            Awards And Honors
+                        <div style={{ fontSize: '28px' ,fontWeight:'600' }}>
+                        <span style={{color:'#0883c1'}}>Awards</span> And Honors
                         </div>
                         
                         {/* <div>
@@ -158,8 +158,8 @@ export const Content = () => {
                 </div>
                 <div className='main-container'>
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'end' }} >
-                        <div style={{ fontSize: '1.3rem' }}>
-                            Experience
+                        <div style={{ fontSize: '28px',fontWeight:'600' }}>
+                        <span style={{color:'#0883c1'}}>Exp</span>erience
                         </div>
                         <div>
                             Read More
@@ -469,8 +469,8 @@ export const Content = () => {
                 </div>
                 <div className='main-container'>
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'end' }} >
-                        <div style={{ fontSize: '1.3rem' }}>
-                            Projects
+                        <div style={{ fontSize: '28px',fontWeight:'600' }}>
+                        <span style={{color:'#0883c1'}}>Sponsored</span> Projects & Fundraising
                         </div>
                         {/* <div>
                             <BsArrowRight style={{ marginLeft: '10px' }} />
