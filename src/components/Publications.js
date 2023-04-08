@@ -5,7 +5,7 @@ function Publications() {
   return (
     <>
     <div className='mainComp'>
-        <br></br><br></br><br></br><br></br><br></br><br></br><br></br> 
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br> <br></br>
         <div className='container'>
             <div className='row' style={{justifyContent:'center'}}>
                 <div className='col-md-4 col-sm-12'>
