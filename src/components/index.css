@@ -10,6 +10,11 @@
     width: 100%;
     font-size: 60px;
 }
+
+.publicationName{
+    font-size: 20px !important;
+}
+
 @media screen and (max-width: 1023px) {
     .mainCompH1{
        font-size: 48px;
@@ -21,6 +26,9 @@
         width: 60%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .publicationName{
+        font-size: 18px !important;
     }
   }
   
