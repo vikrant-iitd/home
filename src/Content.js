@@ -59,7 +59,7 @@ export const Content = () => {
             <div>
 
                 <div className='main-container'>
-                    <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'end' }} >
+                    <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
                         <div style={{ fontSize: '28px',fontWeight:'600' }}>
                             <span style={{color:'#0883c1'}}>Pub</span>lications
                         </div>
