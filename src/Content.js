@@ -493,21 +493,21 @@ export const Content = () => {
                        <div className='main-container'>
                         <div className='container'>
 
-                       <Typography variant="h6" component="span">
+                       <Typography className='publicationName'>
                        <span style={{fontWeight:'600'}}>• Professor:</span>  MLL 213, Materials Modeling, Materials Science & Engineering, IIT Delhi, New Delhi. <br></br>(Aug-Dec
 2022)
                                     </Typography>
-                                    <br></br><br></br>
-                                    <Typography variant="h6" component="span">
+                                    <br></br> 
+                                    <Typography className='publicationName'>
                        <span style={{fontWeight:'600'}}>• Lecturer:</span>  MSE 559, Phase Equilibria, School of Materials Engineering,
 Purdue University, West Lafayette.<br></br> (Aug
 - Dec 2019)  
 
                                     </Typography>
-                                    <br></br><br></br>
-                                    <Typography variant="h6" component="span">
+                                    <br></br> 
+                                    <Typography className='publicationName'>
                        <span style={{fontWeight:'600'}}>• Teaching Assistant:</span>  CHE 211, Introductory Chemical Engineering Thermodynamics, Chemical Engineering,
-Purdue University, West Lafayette.<br></br>
+Purdue University, West Lafayette. 
  (Jan- May 2016) 
 
                                     </Typography>
