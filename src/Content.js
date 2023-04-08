@@ -16,6 +16,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import Projects from './components/Projects';
 
 export const Content = () => {
     return (
@@ -470,12 +471,17 @@ export const Content = () => {
                 <div className='main-container'>
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'end' }} >
                         <div style={{ fontSize: '28px',fontWeight:'600' }}>
-                        <span style={{color:'#0883c1'}}>Sponsored</span> Projects & Fundraising
+                        <span style={{color:'#0883c1'}}>Spo</span>nsored Projects & <span style={{color:'#0883c1'}}>Fun</span>draising
                         </div>
                         {/* <div>
                             <BsArrowRight style={{ marginLeft: '10px' }} />
                         </div> */}
                     </div>
+                </div>
+                <div className='main-container'>
+
+                        <br></br><br></br>
+                        <Projects/>
                 </div>
             </div>
         </div>

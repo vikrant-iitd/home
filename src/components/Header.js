@@ -28,7 +28,7 @@ export const Header = () => {
 
                             <div className={'home-logo'+shrinkLogo}>
                                 <Link to='/' style={{textDecoration:'none',color:'black'}}>
-                                KS Vikrant
+                                <span style={{color:'#0883c1'}}>KS</span> Vikrant
                                 </Link>
                             </div>
                             <div className='navbar-menu'>
