@@ -1,8 +1,33 @@
 .mainComp{
-    background: url('https://lh3.googleusercontent.com/9zE3StG50FuHs9PCo6kMTIhWKyIc3vJ2JqxPZEgaKc8WQ2vzAyWR4wqYYhMZ7zkhc0C893COYflGKt70Sb15e4gg7eI=w640-h400-e365-rj-sc0x00ffffff');
+    background: url('./unnamed.jpg');
     height: 50vh;
     width: 100%;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
 }
+.mainCompH1{
+    width: 100%;
+    font-size: 60px;
+}
+@media screen and (max-width: 1023px) {
+    .mainCompH1{
+       font-size: 48px;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .mainCompH1{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  
+@media screen and (max-width: 477px) {
+    .mainCompH1{
+        width: 68%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
