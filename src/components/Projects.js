@@ -11,7 +11,7 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 
 function Projects() {
-    const [value, setValue] = React.useState('one');
+    const [value, setValue] = React.useState('1');
 
     const handleChange = (event, newValue) => {
       setValue(newValue);

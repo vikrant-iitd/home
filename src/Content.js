@@ -483,6 +483,36 @@ export const Content = () => {
                         <br></br><br></br>
                         <Projects/>
                 </div>
+                <div className='main-container'>
+                    <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'end' }} >
+                        <div style={{ fontSize: '28px',fontWeight:'600' }}>
+                        <span style={{color:'#0883c1'}}>Te</span>aching
+                        </div>
+                    </div>
+                </div>
+                       <div className='main-container'>
+                        <div className='container'>
+
+                       <Typography variant="h6" component="span">
+                       <span style={{fontWeight:'600'}}>• Professor:</span>  MLL 213, Materials Modeling, Materials Science & Engineering, IIT Delhi, New Delhi. <br></br>(Aug-Dec
+2022)
+                                    </Typography>
+                                    <br></br><br></br>
+                                    <Typography variant="h6" component="span">
+                       <span style={{fontWeight:'600'}}>• Lecturer:</span>  MSE 559, Phase Equilibria, School of Materials Engineering,
+Purdue University, West Lafayette.<br></br> (Aug
+- Dec 2019)  
+
+                                    </Typography>
+                                    <br></br><br></br>
+                                    <Typography variant="h6" component="span">
+                       <span style={{fontWeight:'600'}}>• Teaching Assistant:</span>  CHE 211, Introductory Chemical Engineering Thermodynamics, Chemical Engineering,
+Purdue University, West Lafayette.<br></br>
+ (Jan- May 2016) 
+
+                                    </Typography>
+                       </div>
+                        </div>
             </div>
         </div>
     )
