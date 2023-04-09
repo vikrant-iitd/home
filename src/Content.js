@@ -29,7 +29,7 @@ export const Content = () => {
 
                             <span>
                                 {/* About For Prof */}
-                                Vikrant received his B.Tech degree in Materials and Metallurgical Engineering from the Indian Institute of Technology Kanpur in 2010. Later, he worked for four years as an Executive Engineer in the Metallurgy Department of BHEL Corporate R&D, Hyderabad. Further, he received his PhD degree from the School of Materials Engineering at Purdue University in 2019. He continued as a postdoc for one year in the same department. Before joining the Indian Institute of Technology Delhi, he worked as a Postdoctoral Research Associate in Computational Science and Engineering Division at Oak Ridge National Laboratory (ORNL) for 18 months. 
+                                <span style={{fontSize:'25px',color:'#0883c1'}}>V</span>ikrant received his B.Tech degree in Materials and Metallurgical Engineering from the Indian Institute of Technology Kanpur in 2010. Later, he worked for four years as an Executive Engineer in the Metallurgy Department of BHEL Corporate R&D, Hyderabad. Further, he received his PhD degree from the School of Materials Engineering at Purdue University in 2019. He continued as a postdoc for one year in the same department. Before joining the Indian Institute of Technology Delhi, he worked as a Postdoctoral Research Associate in Computational Science and Engineering Division at Oak Ridge National Laboratory (ORNL) for 18 months. 
                                 &nbsp;   <Button style={{display:readMore?'none':''}} onClick={()=>{setReadMore(true)}} href="#">Read More</Button>
 
 <span style={{display:readMore?'':'none'}}> Overall, in the past 11 years, he has designed material microstructures in ionic solids and metals for a wide range of applications using computational approaches such as phase field methods, finite element, and finite volume methods. Briefly, his inter-related research interests are in the fields of: (1) Computational Materials Science, (2) Energy Storage & Conversion Materials, (3) Lithium-ion Batteries and Solid Oxide Fuel Cell Materials, (4) Microstructural evolution of metals and ceramics, (5) High-temperature component materials,(6) Phase-Field Modeling . 
@@ -52,13 +52,16 @@ export const Content = () => {
             <div className='main-container' style={{ padding: '1rem 3rem' }}>
                 <div className='row intro-text' style={{ width: '100%', lineHeight: '2rem', textAlign: 'start' }}>
 
-                    <span style={{ padding: '0px' }}>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        {/* Dr. Andrew Ng is a globally recognized leader in AI (Artificial Intelligence). He is Founder of DeepLearning.AI, Founder & CEO of Landing AI, General Partner at AI Fund, Chairman and Co-Founder of Coursera and an Adjunct Professor at Stanford University’s Computer Science Department. */}
-                    </span>
-                    <hr style={{ opacity: '0' }} />
-                    <span style={{ padding: '0px' }}>As a pioneer in machine learning and online education, Dr. Ng has changed countless lives through his work in AI, and has authored or co-authored over 200 research papers in machine learning, robotics and related fields. In 2013, he was named to the Time 100 list of the most influential persons in the world.
-                    </span>
+                <span>
+                         
+                             <span style={{fontSize:'25px',color:'#0883c1'}}>V</span>ikrant received his B.Tech degree in Materials and Metallurgical Engineering from the Indian Institute of Technology Kanpur in 2010. Later, he worked for four years as an Executive Engineer in the Metallurgy Department of BHEL Corporate R&D, Hyderabad. Further, he received his PhD degree from the School of Materials Engineering at Purdue University in 2019. He continued as a postdoc for one year in the same department. Before joining the Indian Institute of Technology Delhi, he worked as a Postdoctoral Research Associate in Computational Science and Engineering Division at Oak Ridge National Laboratory (ORNL) for 18 months. 
+                                &nbsp;   <Button style={{display:readMore?'none':''}} onClick={()=>{setReadMore(true)}} href="#">Read More</Button>
+
+<span style={{display:readMore?'':'none'}}> Overall, in the past 11 years, he has designed material microstructures in ionic solids and metals for a wide range of applications using computational approaches such as phase field methods, finite element, and finite volume methods. Briefly, his inter-related research interests are in the fields of: (1) Computational Materials Science, (2) Energy Storage & Conversion Materials, (3) Lithium-ion Batteries and Solid Oxide Fuel Cell Materials, (4) Microstructural evolution of metals and ceramics, (5) High-temperature component materials,(6) Phase-Field Modeling . 
+                   </span>
+                              &nbsp;  <Button style={{display:readMore?'':'none'}} onClick={()=>{setReadMore(false)}} href="#">Read Less</Button>
+                            </span>
+                            <hr style={{ opacity: '0' }} />
                 </div>
             </div>
             <div>

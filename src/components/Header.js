@@ -37,13 +37,7 @@ export const Header = () => {
                                 
                             <div className='navbar-menu'>
                                 
-                                <div className='navbar-item' href="#about">
-                                <Tooltip title="About">   
-                                    <span className='my-text'>
-                                        About
-                                    </span>
-                                    </Tooltip>
-                                </div>
+                                 
                                 <a style={{color:'black',   textDecoration:'none'}}  href="/#publications">
                                 <div className='navbar-item'>
                                 <Tooltip title="Publications" >   
@@ -85,6 +79,15 @@ export const Header = () => {
                                 <Tooltip title="Patents and Copyrights">
                                     <span className='my-text'>
                                         P&C
+                                    </span>
+                                    </Tooltip>
+                                </div>
+                                </a>
+                                <a style={{color:'black',   textDecoration:'none'}}  href="/#gallery">
+                                <div className='navbar-item'>
+                                <Tooltip title="Gallery">   
+                                    <span className='my-text'>
+                                        Gallery
                                     </span>
                                     </Tooltip>
                                 </div>
