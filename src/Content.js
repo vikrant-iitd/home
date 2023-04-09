@@ -21,7 +21,7 @@ import Projects from './components/Projects';
 export const Content = () => {
     return (
         <div>
-            <div className='main-container' style={{ paddingTop: `8rem` }}>
+            <div className='main-container' style={{ paddingTop: `8rem` }} id="home">
                 <div className='row-home'>
                     <div className='card-text-home' style={{ padding: '3rem 4rem', background: 'rgb(241 245 249)' }}>
                         <div className='row' style={{ width: '100%', lineHeight: '2rem' }}>
@@ -57,9 +57,11 @@ export const Content = () => {
                 </div>
             </div>
             <div>
+                <div id="publications">
 
-                <div className='main-container'>
-                    <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
+                
+                <div className='main-container'  >
+                    <div  style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
                         <div style={{ fontSize: '28px',fontWeight:'600' }}>
                             <span style={{color:'#0883c1'}}>Pub</span>lications
                         </div>
@@ -72,6 +74,7 @@ export const Content = () => {
                         </div>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div className='main-container'>
                     <div style={{ width: '100%' }}>
@@ -155,10 +158,16 @@ export const Content = () => {
                                 Excellence in the Bachelor of Technology programme in Materials & Metallurgical Engineering on the eve of
                                 IIT Kanpur Golden Jubilee Year, 2009.</div>
                         </div>
+                        <div style={{ display: 'flex' }}>
+                            <div style={{ fontSize: '2.5rem', color: 'grey', opacity: '0.6' }}>6</div>
+                            <div style={{ fontSize: '1.1rem', marginTop: '10px', marginLeft: '10px' }}>The Certificate of Merit for Academic
+                            • Merit Cum Means (MCM) Scholarship,
+IIT Kanpur, 2006-2010.</div>
+                        </div>
                     </div>
                 </div>
-                <div className='main-container'>
-                    <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'end' }} >
+                <div className='main-container' id="experience">
+                    <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
                         <div style={{ fontSize: '28px',fontWeight:'600' }}>
                         <span style={{color:'#0883c1'}}>Exp</span>erience
                         </div>
@@ -468,7 +477,8 @@ export const Content = () => {
                     </div>
 
                 </div>
-                <div className='main-container'>
+             
+                <div className='main-container' id="projects">
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'end' }} >
                         <div style={{ fontSize: '28px',fontWeight:'600' }}>
                         <span style={{color:'#0883c1'}}>Spo</span>nsored Projects & <span style={{color:'#0883c1'}}>Fun</span>draising
@@ -483,7 +493,8 @@ export const Content = () => {
                         <br></br><br></br>
                         <Projects/>
                 </div>
-                <div className='main-container'>
+                {/* <hr/> */}
+                <div className='main-container' id="courses">
                     <div style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'end' }} >
                         <div style={{ fontSize: '28px',fontWeight:'600' }}>
                         <span style={{color:'#0883c1'}}>Te</span>aching
@@ -507,7 +518,7 @@ Purdue University, West Lafayette.<br></br> (Aug
                                     <br></br> 
                                     <Typography className='publicationName'>
                        <span style={{fontWeight:'600'}}>• Teaching Assistant:</span>  CHE 211, Introductory Chemical Engineering Thermodynamics, Chemical Engineering,
-Purdue University, West Lafayette. 
+Purdue University, West Lafayette. <br></br>
  (Jan- May 2016) 
 
                                     </Typography>
