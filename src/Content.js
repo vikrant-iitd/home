@@ -49,8 +49,8 @@ export const Content = () => {
                     </div>
                 </div>
             </div>
-            <div className='main-container' style={{ padding: '1rem 3rem' }}>
-                <div className='row intro-text' style={{ width: '100%', lineHeight: '2rem', textAlign: 'start' }}>
+            <div className='main-container' style={{ padding: '1rem 1.5rem' }}>
+                <div className='row intro-text' style={{ width: '100%', lineHeight: '1.5rem', textAlign: 'start' }}>
 
                 <span>
                          
