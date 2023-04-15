@@ -53,15 +53,17 @@ export const Header = () => {
                             <div className='navbar-menu'>
 
 
-                                <a style={{ color: 'black', textDecoration: 'none' }} href="/#publications">
+                                {/* <a style={{ color: 'black', textDecoration: 'none' }} href="/#publications"> */}
                                     <div className='navbar-item'>
                                         <Tooltip title="Publications" >
+                                            <Link style={{textDecoration:'none',color:'black'}}  to='/publications'>
                                             <span className='my-text'>
                                                 Publications
                                             </span>
+                                            </Link>
                                         </Tooltip>
                                     </div>
-                                </a>
+                                {/* </a> */}
                                 <a style={{ color: 'black', textDecoration: 'none' }} href="/#projects">
                                     <div className='navbar-item'>
                                         <Tooltip title="Projects">
