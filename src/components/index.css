@@ -9,8 +9,19 @@
 .mainCompH1{
     width: 100%;
     font-size: 60px;
+    
 }
 
+.hidden-side-bar{
+    /* display: none; */
+    background: blue;
+    transition: width 1s ease-in;
+    width: 70%;
+}
+.hidden-side-bar:target{
+    display: block;
+    width: 70%;
+}
 .publicationName{
     font-size: 18px !important;
 }

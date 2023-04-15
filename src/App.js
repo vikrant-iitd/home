@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import { Header } from './components/Header';
-import { useRef } from 'react';
+// import { useRef } from 'react';
 import { Footer } from './Footer';
 import { Content } from './Content';
-
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Publications from './components/Publications';
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
     //   <Content/>
     //   <Footer />
     // </div>
+    <>
      <Router>
       <Header/>
      <Routes>
@@ -23,6 +24,7 @@ function App() {
      </Routes>
      <Footer/>
      </Router>
+    </>
 
   );
 }
