@@ -151,9 +151,11 @@ export const Header = () => {
                                     <a onClick={(e)=> setHidden(1)} style={{ color: 'black', textDecoration: 'none' }} href="/#publications">
                                         <div className='navbar-item'>
                                             <Tooltip title="Publications" >
+                                                <Link style={{textDecoration:'none',color:'black'}} to='./publications'>
                                                 <span className='my-text'>
                                                     Publications
                                                 </span>
+                                                </Link>
                                             </Tooltip>
                                         </div>
                                     </a>
