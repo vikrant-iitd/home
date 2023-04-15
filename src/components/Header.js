@@ -3,7 +3,7 @@ import { CgDarkMode, CgMenu } from 'react-icons/cg';
 import { BsLinkedin, BsTwitter } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
 import Tooltip from '@mui/material/Tooltip';
-
+import { RxCross1 } from "react-icons/rx";
 export const Header = () => {
     const [isScrolled, setScrolled] = useState(0);
     const [shrink, setShrink] = useState('expand');
@@ -25,16 +25,16 @@ export const Header = () => {
     const [isActive, setActive] = useState('');
     const [hidden, setHidden] = useState(1);
 
-    document.addEventListener('click', (e) => {
-        console.log((e))
-        if (e.target.className.baseVal == 'menu-icon') {
-            // setHidden(0);
-        }
-        else {
-            setHidden(1);
-        }
-    }
-    )
+    // document.addEventListener('click', (e) => {
+    //     // console.log((e))
+    //     if (e.target.className.baseVal == 'menu-icon') {
+    //         // setHidden(0);
+    //     }
+    //     else {
+    //         setHidden(1);
+    //     }
+    // }
+    // )
     return (
         <div>
             <header>
@@ -140,10 +140,13 @@ export const Header = () => {
                     <div style={{ display: 'none' }}></div>
                     :
                     <>
-                        <div className='hidden-side-bar' style={{ position: 'fixed', zIndex: 1, height: '100vh', background: 'white', boxShadow: '10px 1 0px 10px black' }} id='sideBar' >
-                            <ul>
+                        <div className='hidden-side-bar' style={{ position: 'fixed', zIndex: 1, height: '100vh', background: 'white', boxShadow: '0px 10px 200px black' }} id='sideBar' >
+                            <div style={{float:'right', margin:'10px'}}>
+                            <RxCross1 onClick={(e)=>setHidden(1)} style={{cursor:'pointer'}} size={`1.5rem`}/>
+                            </div>
+                            <ul style={{marginTop:'10px'}}>
                                 <li style={{ textDecoration: 'none', marginTop: '20px' }}>
-                                    <a style={{ color: 'black', textDecoration: 'none' }} href="/#publications">
+                                    <a onClick={(e)=> setHidden(1)} style={{ color: 'black', textDecoration: 'none' }} href="/#publications">
                                         <div className='navbar-item'>
                                             <Tooltip title="Publications" >
                                                 <span className='my-text'>
@@ -155,7 +158,7 @@ export const Header = () => {
                                 </li>
                                 <li style={{ textDecoration: 'none', marginTop: '20px' }}>
 
-                                    <a style={{ color: 'black', textDecoration: 'none' }} href="/#projects">
+                                    <a onClick={(e)=> setHidden(1)} style={{ color: 'black', textDecoration: 'none' }} href="/#projects">
                                         <div className='navbar-item'>
                                             <Tooltip title="Projects">
                                                 <span className='my-text'>
@@ -167,7 +170,7 @@ export const Header = () => {
                                 </li>
                                 <li style={{ textDecoration: 'none', marginTop: '20px' }}>
 
-                                    <a style={{ color: 'black', textDecoration: 'none' }} href="/#experience">
+                                    <a onClick={(e)=> setHidden(1)} style={{ color: 'black', textDecoration: 'none' }} href="/#experience">
                                         <div className='navbar-item'>
                                             <Tooltip title="Experience">
                                                 <span className='my-text'>
@@ -179,7 +182,7 @@ export const Header = () => {
                                 </li>
                                 <li style={{ textDecoration: 'none', marginTop: '20px' }}>
 
-                                    <a style={{ color: 'black', textDecoration: 'none' }} href="/#courses">
+                                    <a onClick={(e)=> setHidden(1)} style={{ color: 'black', textDecoration: 'none' }} href="/#courses">
                                         <div className='navbar-item'>
                                             <Tooltip title=" Courses">
                                                 <span className='my-text'>
@@ -191,7 +194,7 @@ export const Header = () => {
                                 </li>
                                 <li style={{ textDecoration: 'none', marginTop: '20px' }}>
 
-                                    <a style={{ color: 'black', textDecoration: 'none' }} href="/#p&c">
+                                    <a onClick={(e)=> setHidden(1)} style={{ color: 'black', textDecoration: 'none' }} href="/#p&c">
                                         <div className='navbar-item'>
                                             <Tooltip title="Patents and Copyrights">
                                                 <span className='my-text'>
@@ -203,7 +206,7 @@ export const Header = () => {
                                 </li>
                                 <li style={{ textDecoration: 'none', marginTop: '20px' }}>
 
-                                    <a style={{ color: 'black', textDecoration: 'none' }} href="/#gallery">
+                                    <a onClick={(e)=> setHidden(1)} style={{ color: 'black', textDecoration: 'none' }} href="/#gallery">
                                         <div className='navbar-item'>
                                             <Tooltip title="Gallery">
                                                 <span className='my-text'>
@@ -215,7 +218,7 @@ export const Header = () => {
                                 </li>
                                 <li style={{ textDecoration: 'none', marginTop: '20px' }}>
 
-                                    <a style={{ color: 'black', textDecoration: 'none' }} href="/#contact">
+                                    <a onClick={(e)=> setHidden(1)} style={{ color: 'black', textDecoration: 'none' }} href="/#contact">
                                         <div className='navbar-item'>
                                             <Tooltip title="Contact">
                                                 <span className='my-text'>
