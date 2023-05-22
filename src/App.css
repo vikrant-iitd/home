@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 .home-logo {
-  font-family: Quicksand, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  color: 'black';
+  font-family: Quicksand, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  color: "black";
   font-weight: 600;
   font-size: 1.75rem;
   transition: font-size 1s;
@@ -10,7 +13,10 @@
 
 .home-logo-shrink {
   font-weight: 600;
-  font-family: Quicksand, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: Quicksand, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
   font-size: 1.5rem;
 }
 
@@ -20,7 +26,6 @@
   padding: 0.9rem 1.2rem 0.5rem 1.2rem;
   margin: auto;
 }
-
 
 .row-home {
   display: flex;
@@ -38,7 +43,6 @@
   display: block;
 }
 
-
 .card-img {
   padding: 0px;
   height: 100%;
@@ -48,7 +52,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index:-1
+  z-index: -1;
 }
 
 .card-img-home {
@@ -72,7 +76,6 @@ body {
   height: 100%;
   margin: 0;
 }
-
 
 footer {
   bottom: 0;
@@ -146,17 +149,15 @@ footer {
   transition: width 0.3s ease-in-out;
 }
 
-
-.more-info-btn{
+.more-info-btn {
   transform: rotate(-180deg);
   transition: 0.1s linear;
 }
 
-.more-info-btn:hover{
+.more-info-btn:hover {
   transform: rotate(0deg);
-
 }
-.more-info-btn:target{
+.more-info-btn:target {
   display: none;
 }
 /* Define the styles for the hover effect */
@@ -174,14 +175,13 @@ footer {
   display: none;
 }
 
-@media (max-width:1045px) {
+@media (max-width: 1045px) {
   .navbar-menu {
     display: none;
   }
-  .intro-text{
+  .intro-text {
     display: block !important;
   }
-
 
   .card-text-home {
     display: none;
@@ -212,15 +212,15 @@ footer {
 
   .card-img {
     width: 100%;
-    height:100%;
+    height: 100%;
     top: 50%;
     object-fit: contain;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
   }
 }
 
-@media (max-width:720px) {
+@media (max-width: 720px) {
   .mid-footer {
     display: none;
   }
@@ -234,15 +234,39 @@ footer {
   }
 }
 
-
-
-@media (max-width:520px) {
-.card-img-home {
-  min-width: 300px;
-  min-height: 300px;
-  display: flex;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
+@media (max-width: 520px) {
+  .card-img-home {
+    min-width: 300px;
+    min-height: 300px;
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
 }
+
+.gallery-container {
+  padding: 0;
+}
+
+.gallery-row {
+  margin: 0;
+}
+
+.gallery-col {
+  padding: 0;
+}
+
+.gallery-image {
+  /* height: 350px; */
+  aspect-ratio: auto;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-image.active {
+  transform: scale(1.1);
 }

@@ -1,64 +1,94 @@
-.mainComp{
-    background: url('./unnamed.jpg');
-    height: 50vh;
-    width: 100%;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+.mainComp {
+  background: url("./unnamed.jpg");
+  height: 50vh;
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
-.mainCompH1{
-    width: 100%;
-    font-size: 60px;
-    
+.mainComp2 {
+  background: url("./unnamed.jpg");
+  height: 40vh;
+  width: 100%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 
-.hidden-side-bar{
-    /* display: none; */
-    background: blue;
-    transition: width 1s ease-in;
-    width: 70%;
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hidden-side-bar:target{
-    display: block;
-    width: 70%;
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
 }
-.publicationName{
-    font-size: 18px !important;
+
+.carousel button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
 }
-.mainPubHeading{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+
+.carousel button:hover {
+  color: blue;
+}
+.mainCompH1 {
+  width: 100%;
+  font-size: 60px;
+}
+
+.hidden-side-bar {
+  /* display: none; */
+  background: blue;
+  transition: width 1s ease-in;
+  width: 70%;
+}
+.hidden-side-bar:target {
+  display: block;
+  width: 70%;
+}
+.publicationName {
+  font-size: 18px !important;
+}
+.mainPubHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 @media screen and (max-width: 1023px) {
-    .mainCompH1{
-       font-size: 48px;
-    }
+  .mainCompH1 {
+    font-size: 48px;
   }
-  @media screen and (max-width: 1003px) {
-    .mainPubHeading{
-        flex-direction: column;
-    }
+}
+@media screen and (max-width: 1003px) {
+  .mainPubHeading {
+    flex-direction: column;
   }
+}
 
 @media screen and (max-width: 767px) {
-    .mainCompH1{
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .publicationName{
-        font-size: 18px !important;
-    }
-    
+  .mainCompH1 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+  .publicationName {
+    font-size: 18px !important;
+  }
+}
+
 @media screen and (max-width: 477px) {
-    .mainCompH1{
-        width:  fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .mainCompH1 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
