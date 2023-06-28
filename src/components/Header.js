@@ -49,7 +49,7 @@ export const Header = () => {
                     to="/"
                     style={{ textDecoration: "none", color: "black" }}
                   >
-                    <span style={{ color: "#0883c1" }}>KS</span> Vikrant
+                    <span style={{ color: "#0883c1" }}>KSN</span> Vikrant
                   </Link>
                 </div>
               </Tooltip>
@@ -109,7 +109,7 @@ export const Header = () => {
                 </a>
                 <a
                   style={{ color: "black", textDecoration: "none" }}
-                  href="/#gallery"
+                  href="/gallery"
                 >
                   <div className="navbar-item">
                     <Tooltip title="Gallery">
@@ -184,7 +184,7 @@ export const Header = () => {
                       <Tooltip title="Publications">
                         <Link
                           style={{ textDecoration: "none", color: "black" }}
-                          to="./publications"
+                          to="/publications"
                         >
                           <span className="my-text">Publications</span>
                         </Link>
@@ -196,7 +196,7 @@ export const Header = () => {
                   <a
                     onClick={(e) => setHidden(1)}
                     style={{ color: "black", textDecoration: "none" }}
-                    href="/#projects"
+                    href="/projects"
                   >
                     <div className="navbar-item">
                       <Tooltip title="Projects">
@@ -209,7 +209,7 @@ export const Header = () => {
                   <a
                     onClick={(e) => setHidden(1)}
                     style={{ color: "black", textDecoration: "none" }}
-                    href="/#experience"
+                    href="/experience"
                   >
                     <div className="navbar-item">
                       <Tooltip title="Experience">
@@ -222,7 +222,7 @@ export const Header = () => {
                   <a
                     onClick={(e) => setHidden(1)}
                     style={{ color: "black", textDecoration: "none" }}
-                    href="/#courses"
+                    href="/courses"
                   >
                     <div className="navbar-item">
                       <Tooltip title=" Courses">
@@ -235,11 +235,11 @@ export const Header = () => {
                   <a
                     onClick={(e) => setHidden(1)}
                     style={{ color: "black", textDecoration: "none" }}
-                    href="/#p&c"
+                    href="/team"
                   >
                     <div className="navbar-item">
-                      <Tooltip title="Patents and Copyrights">
-                        <span className="my-text">P&C</span>
+                      <Tooltip title="Team">
+                        <span className="my-text">Team</span>
                       </Tooltip>
                     </div>
                   </a>
@@ -248,7 +248,7 @@ export const Header = () => {
                   <a
                     onClick={(e) => setHidden(1)}
                     style={{ color: "black", textDecoration: "none" }}
-                    href="/#gallery"
+                    href="/gallery"
                   >
                     <div className="navbar-item">
                       <Tooltip title="Gallery">

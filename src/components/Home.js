@@ -35,33 +35,46 @@ export const Home = () => {
         <br></br>
         <br></br>
         <br></br>
+        <div className="upspace">
         <br></br>
         <br></br>
-        <br></br>
+        </div>
         <br></br> <br></br>
-        <div className="container">
+        <div className="container" >
           <div
             className="row"
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{ display: "flex", justifyContent: "center", padding:'0px' }}
           >
             <div
-              className="col-md-12 col-sm-12"
-              style={{ display: "flex", justifyContent: "center" }}
+              className="col-md-12 col-sm-6"
+              style={{ display: "flex", justifyContent: "center", padding:'0px', margin:'0px' }}
             >
               <h1
-                className="mainCompH1"
+                className="mainCompH2"
                 style={{
                   color: "white",
                   justifyContent: "center",
-                  display: "flex",
+                  // display: "flex",
+                  width:'100%',
+                  marginTop:'0px',
                 }}
               >
+                <div>
                 <span style={{ color: "#0883c1" }}>Co</span>
+                <span>
                 mputational
+                </span>
+                </div>
+                <div>
+
                 <span style={{ color: "#0883c1", marginLeft: "15px" }}> M</span>
                 aterials
+                </div>
+                <div>
+
                 <span style={{ color: "#0883c1", marginLeft: "15px" }}> E</span>
                 ngineering
+                </div>
               </h1>
             </div>
           </div>

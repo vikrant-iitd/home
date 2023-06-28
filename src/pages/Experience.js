@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import Projects from "../components/Projects";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
@@ -8,8 +8,10 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import { Typography } from "@mui/material";
 import { FiArrowDown } from "react-icons/fi";
+import {IoIosArrowDown} from "react-icons/io"
 
 export const Experience = () => {
+  const [show,setShow]= useState([0,0,0,0,0,0,0])
   return (
     <>
       <div className="mainComp">
@@ -44,8 +46,8 @@ export const Experience = () => {
               }}
             >
               <div style={{ fontSize: "28px", fontWeight: "600" }}>
-                <span style={{ color: "#0883c1" }}>Spo</span>nsored Projects &{" "}
-                <span style={{ color: "#0883c1" }}>Fun</span>draising
+                <span style={{ color: "#0883c1" }}>Edu</span>cation &{" "}
+                <span style={{ color: "#0883c1" }}>Work</span> Experience
               </div>
               {/* <div>
                             <BsArrowRight style={{ marginLeft: '10px' }} />
@@ -63,57 +65,11 @@ export const Experience = () => {
                 }}
               >
                 <TimelineItem>
-                  {/* <TimelineOppositeContent
-                                    sx={{ m: 'auto 0' }}
-                                    align="right"
-                                    variant="div"
-                                    color="text.secondary"
-                                >
-                                    9:30 am
-                                </TimelineOppositeContent> */}
+                  
                   <TimelineSeparator>
-                    <TimelineConnector />
-                    {/* <FastfoodIcon /> */}
+                  <TimelineConnector sx={{bgcolor:'white'}} />
                     <img
-                      src="IIT_Kanpur.png"
-                      style={{
-                        objectFit: "contain",
-                        width: "40px",
-                        borderRadius: "50%",
-                      }}
-                    />
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", width: "100%" }}>
-                    <Typography variant="h6" component="span">
-                      Bachelor of Technology : Materials & Metallurgical
-                      Engineering , I.I.T Kanpur, India
-                    </Typography>
-                    <Typography
-                      component="p"
-                      style={{ fontSize: "18px", fontWeight: "500" }}
-                    >
-                      Aug 2006 - May 2010
-                    </Typography>
-                    <div>
-                      Advisors: Prof. K. Mondal, Late Prof. R. Balasubramanian
-                      Final year project: Modeling of the passive film on
-                      Phosphoric irons in near alkaline conditions
-                    </div>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  {/* <TimelineOppositeContent
-                                    sx={{ m: 'auto 0' }}
-                                    variant="body2"
-                                    color="text.secondary"
-                                >
-                                    10:00 am
-                                </TimelineOppositeContent> */}
-                  <TimelineSeparator>
-                    <TimelineConnector />
-                    <img
-                      src="IIT_Kanpur.png"
+                      src="iitdelhi.png"
                       style={{
                         objectFit: "contain",
                         width: "40px",
@@ -124,20 +80,16 @@ export const Experience = () => {
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "12px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                      Summer Internship : Chemistry department, University of
-                      Western Ontario, Canada
+                      Assistant Professor I.I.T Delhi, India
                     </Typography>
                     <Typography
                       component="p"
                       style={{ fontSize: "18px", fontWeight: "500" }}
                     >
-                      May 2009 - Jul 2009
+                      Feb 2022-Current
                     </Typography>
                     <Typography>
-                      Supervisor: Prof. David W. Shoesmith
-                      <br />
-                      Modeling of oxide film properties of Alloy 22 and Alloy
-                      2000 in corrosive conditions
+                      Department of Materials Science & Engineering
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
@@ -145,47 +97,108 @@ export const Experience = () => {
                   <TimelineSeparator>
                     <TimelineConnector sx={{ bgcolor: "secondary" }} />
                     <img
-                      src="IIT_Kanpur.png"
+                      src="oak.png"
                       style={{
                         objectFit: "contain",
                         width: "40px",
                         borderRadius: "50%",
                       }}
                     />
-
+                    <TimelineConnector />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <Typography variant="h6" component="span">
+                        Postdoctoral Research Associate , Oak Ridge National
+                        Laboratory, USA
+                      </Typography>
+                      <button style={{ border: "none", background: "none" }}>
+                        {/* <a href="#id1" className="more-info-btn">
+                          <FiArrowDown size={20} />
+                        </a> */}
+                      </button>
+                    </div>
+                    <Typography
+                      component="p"
+                      style={{ fontSize: "18px", fontWeight: "500"}}
+                    >
+                      Jun 2020 - Feb 2022
+                    </Typography>
+                    <Typography>
+                      <div id="id1">
+                        Computing & Computational Sciences, Mentor: Dr. Srikanth
+                        Allu
+                      </div>
+                      <ul>
+                        <li>
+                          Lithium plating and stripping kinetics in fast
+                          charging batteries
+                        </li>
+                        <li>
+                          Effect of plating on intercalation kinetics in edge
+                          and basal planes of graphite
+                        </li>
+                        <li>
+                          SEI formation and evolution kinetics in Li-ion
+                          batteries
+                        </li>
+                        <li>Cell degradation modeling</li>
+                        <li>Battery pack degradation modeling</li>
+                        <li>
+                          Generalized phase field formulation of polycrystalline
+                          ferroelectric perovskites
+                        </li>
+                      </ul>
+                    </Typography>
+                  </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineConnector sx={{ bgcolor: "secondary" }} />
+                    <img
+                      src="purdue.png"
+                      style={{
+                        objectFit: "contain",
+                        width: "40px",
+                        borderRadius: "50%",
+                      }}
+                    />
                     <TimelineConnector />
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "12px", px: 2 }}>
                     <Typography variant="h6" component="span">
-                      Executive Engineer, BHEL Corporate R&D, India
+                      Postdoctoral Researcher , Purdue University, USA
                     </Typography>
                     <Typography
                       component="p"
                       style={{ fontSize: "18px", fontWeight: "500" }}
                     >
-                      Jul 2010- Aug 2014
+                      Aug 2019 - Jun 2020
                     </Typography>
                     <Typography>
-                      Metallurgy department, General Manager: Dr. Kulvir Singh
+                      School of Materials Engineering, Supervisor: Prof. R.
+                      Edwin García
                       <ul>
                         <li>
-                          Creep and fireside corrosion studies of Super 304H for
-                          Advanced Ultra Supercritical boiler tube applications
+                          Electrochemomechanics of lithium dendrite growth
                         </li>
                         <li>
-                          Designing of alternate materials for discharge
-                          electrodes in corrosive conditions for Electro Static
-                          Precipitator
+                          Variational formulation of dislocation dynamics in
+                          advanced ionic solids
                         </li>
                         <li>
-                          Effect of steam side oxidation and fireside corrosion
-                          degradation processes on creep life of service exposed
-                          boiler tubes
+                          Phase field modeling of alloyed nanopillars in
+                          dielectric hybrid metamaterials
                         </li>
                         <li>
-                          Deterministic and Probabilistic calculation of life of
-                          Cr-Mo-V rotor using crack propagation and
-                          degradation/damage processes
+                          Generalized phase field formulation of polycrystalline
+                          ferroelectric perovskites
                         </li>
                       </ul>
                     </Typography>
@@ -195,7 +208,7 @@ export const Experience = () => {
                   <TimelineSeparator>
                     <TimelineConnector />
                     <img
-                      src="IIT_Kanpur.png"
+                      src="purdue.png"
                       style={{
                         objectFit: "contain",
                         width: "40px",
@@ -286,7 +299,68 @@ export const Experience = () => {
                   <TimelineSeparator>
                     <TimelineConnector sx={{ bgcolor: "secondary" }} />
                     <img
-                      src="IIT_Kanpur.png"
+                      src="bhel.png"
+                      style={{
+                        objectFit: "contain",
+                        width: "40px",
+                        borderRadius: "50%",
+                      }}
+                    />
+
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    <Typography variant="h6" component="span">
+                      Executive Engineer, BHEL Corporate R&D, India
+                    </Typography>
+                    <Typography
+                      component="p"
+                      style={{ fontSize: "18px", fontWeight: "500" }}
+                    >
+                      Jul 2010- Aug 2014
+                    </Typography>
+                    <Typography>
+                      Metallurgy department, General Manager: Dr. Kulvir Singh
+                      <ul>
+                        <li>
+                          Creep and fireside corrosion studies of Super 304H for
+                          Advanced Ultra Supercritical boiler tube applications
+                        </li>
+                        <li>
+                          Designing of alternate materials for discharge
+                          electrodes in corrosive conditions for Electro Static
+                          Precipitator
+                        </li>
+                        <li>
+                          Effect of steam side oxidation and fireside corrosion
+                          degradation processes on creep life of service exposed
+                          boiler tubes
+                        </li>
+                        <li>
+                          Deterministic and Probabilistic calculation of life of
+                          Cr-Mo-V rotor using crack propagation and
+                          degradation/damage processes
+                        </li>
+                      </ul>
+                    </Typography>
+                  </TimelineContent>
+                </TimelineItem>
+                
+                <TimelineItem>
+                  {/* <TimelineOppositeContent
+                                    sx={{ m: 'auto 0' }}
+                                    variant="body2"
+                                    color="text.secondary"
+                                >
+                                    10:00 am
+                                </TimelineOppositeContent> */}
+                  <TimelineSeparator>
+                    {/* <div style={{height:'20px'}}> */}
+
+                    <TimelineConnector />
+                    {/* </div> */}
+                    <img
+                      src="western.png"
                       style={{
                         objectFit: "contain",
                         width: "40px",
@@ -294,43 +368,41 @@ export const Experience = () => {
                       }}
                     />
                     <TimelineConnector />
+                    
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    {/* <br></br> */}
                     <Typography variant="h6" component="span">
-                      Postdoctoral Researcher , Purdue University, USA
+                      Summer Internship : Chemistry department, University of
+                      Western Ontario, Canada
                     </Typography>
                     <Typography
                       component="p"
                       style={{ fontSize: "18px", fontWeight: "500" }}
                     >
-                      Aug 2019 - Jun 2020
+                      May 2009 - Jul 2009
                     </Typography>
                     <Typography>
-                      School of Materials Engineering, Supervisor: Prof. R.
-                      Edwin García
-                      <ul>
-                        <li>
-                          Electrochemomechanics of lithium dendrite growth
-                        </li>
-                        <li>
-                          Variational formulation of dislocation dynamics in
-                          advanced ionic solids
-                        </li>
-                        <li>
-                          Phase field modeling of alloyed nanopillars in
-                          dielectric hybrid metamaterials
-                        </li>
-                        <li>
-                          Generalized phase field formulation of polycrystalline
-                          ferroelectric perovskites
-                        </li>
-                      </ul>
+                      Supervisor: Prof. David W. Shoesmith
+                      <br />
+                      Modeling of oxide film properties of Alloy 22 and Alloy
+                      2000 in corrosive conditions
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
+                  {/* <TimelineOppositeContent
+                                    sx={{ m: 'auto 0' }}
+                                    align="right"
+                                    variant="div"
+                                    color="text.secondary"
+                                >
+                                    9:30 am
+                                </TimelineOppositeContent> */}
                   <TimelineSeparator>
-                    <TimelineConnector sx={{ bgcolor: "secondary" }} />
+                    {/* <TimelineConnector /> */}
+                    {/* <FastfoodIcon /> */}
+                    <TimelineConnector />
                     <img
                       src="IIT_Kanpur.png"
                       style={{
@@ -339,86 +411,31 @@ export const Experience = () => {
                         borderRadius: "50%",
                       }}
                     />
-                    <TimelineConnector />
-                    <TimelineConnector />
+                    <TimelineConnector sx={{bgcolor:'white'}} />
                   </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
+                  <TimelineContent sx={{ py: "12px", width: "100%" }}>
+                    <br></br>
+                    <Typography variant="h6" component="span">
+                      Bachelor of Technology : Materials & Metallurgical
+                      Engineering , I.I.T Kanpur, India
+                    </Typography>
+                    <Typography
+                      component="p"
+                      style={{ fontSize: "18px", fontWeight: "500" }}
                     >
-                      <Typography variant="h6" component="span">
-                        Postdoctoral Research Associate , Oak Ridge National
-                        Laboratory, USA
-                      </Typography>
-                      <button style={{ border: "none", background: "none" }}>
-                        {/* <a href="#id1" className="more-info-btn">
-                          <FiArrowDown size={20} />
-                        </a> */}
-                      </button>
+                      Aug 2006 - May 2010
+                    </Typography>
+                    <div>
+                      Advisors: Prof. K. Mondal, Late Prof. R. Balasubramanian
+                      Final year project: Modeling of the passive film on
+                      Phosphoric irons in near alkaline conditions
                     </div>
-                    <Typography
-                      component="p"
-                      style={{ fontSize: "18px", fontWeight: "500" }}
-                    >
-                      Jun 2020 - Feb 2022
-                    </Typography>
-                    <Typography>
-                      <div id="id1">
-                        Computing & Computational Sciences, Mentor: Dr. Srikanth
-                        Allu
-                      </div>
-                      <ul>
-                        <li>
-                          Lithium plating and stripping kinetics in fast
-                          charging batteries
-                        </li>
-                        <li>
-                          Effect of plating on intercalation kinetics in edge
-                          and basal planes of graphite
-                        </li>
-                        <li>
-                          SEI formation and evolution kinetics in Li-ion
-                          batteries
-                        </li>
-                        <li>Cell degradation modeling</li>
-                        <li>Battery pack degradation modeling</li>
-                        <li>
-                          Generalized phase field formulation of polycrystalline
-                          ferroelectric perovskites
-                        </li>
-                      </ul>
-                    </Typography>
                   </TimelineContent>
                 </TimelineItem>
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <img
-                      src="IIT_Kanpur.png"
-                      style={{
-                        objectFit: "contain",
-                        width: "40px",
-                        borderRadius: "50%",
-                      }}
-                    />
-                  </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Assistant Professor I.I.T Delhi, India
-                    </Typography>
-                    <Typography
-                      component="p"
-                      style={{ fontSize: "18px", fontWeight: "500" }}
-                    >
-                      Feb 2022-Current
-                    </Typography>
-                    <Typography>
-                      Department of Materials Science & Engineering
-                    </Typography>
-                  </TimelineContent>
-                </TimelineItem>
+                
+                
+                
+                
               </Timeline>
             </div>
           </div>

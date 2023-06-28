@@ -41,6 +41,12 @@
 .mainCompH1 {
   width: 100%;
   font-size: 60px;
+  display: flex;
+}
+.mainCompH2 {
+  width: 100%;
+  font-size: 60px;
+  display: flex;
 }
 
 .hidden-side-bar {
@@ -67,15 +73,36 @@
   .mainCompH1 {
     font-size: 48px;
   }
+  .mainCompH2 {
+    font-size: 48px;
+  }
 }
 @media screen and (max-width: 1003px) {
   .mainPubHeading {
     flex-direction: column;
   }
 }
-
+.upspace{
+  display: block;
+}
+@media screen and (max-width: 850px) {
+  /* .mainCompH1 {
+    display: grid;
+  } */
+  .mainCompH2 {
+    display: grid;
+  }
+  .upspace{
+    display: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .mainCompH1 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mainCompH2 {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -90,5 +117,12 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0px;
+  }
+  .mainCompH2  {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
   }
 }

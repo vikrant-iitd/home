@@ -16,13 +16,12 @@ export const Course = () => {
           <div className="row" style={{ justifyContent: "center" }}>
             <div className="col-md-4 col-sm-12">
               <h1 className="mainCompH1" style={{ color: "white" }}>
-                <span style={{ color: "#0883c1" }}>Co</span>usrses
+                <span style={{ color: "#0883c1" }}>Co</span>urses
               </h1>
             </div>
           </div>
         </div>
       </div>
-      <br></br>
       <br></br>
       <div className="container">
         <div>
@@ -42,6 +41,12 @@ export const Course = () => {
           </div>
           <div className="main-container">
             <div className="container">
+            <Typography className="publicationName">
+                <span style={{ fontWeight: "600" }}>• Professor:</span> MLL 452,
+                Corrosion and Degradation of Materials, IIT Delhi,
+                New Delhi. 
+                <br></br>
+              </Typography>
               <Typography className="publicationName">
                 <span style={{ fontWeight: "600" }}>• Professor:</span> MLL 213,
                 Materials Modeling, Materials Science & Engineering, IIT Delhi,
