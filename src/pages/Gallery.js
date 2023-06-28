@@ -75,7 +75,9 @@ export const Gallery = () => {
           </h1>
         </div>
       </div>
+      <div className='col-sm-12'>
   <Slider images={images}/>
+      </div>
   </div>
   </div>
   </div>
