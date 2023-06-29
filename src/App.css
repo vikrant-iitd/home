@@ -19,6 +19,15 @@
     Noto Color Emoji;
   font-size: 1.5rem;
 }
+.play-button{
+  display: block;
+}
+@media screen and (max-width: 720px) {
+  .play-button {
+    display: none;
+  }
+}
+
 
 .main-container {
   display: flex;

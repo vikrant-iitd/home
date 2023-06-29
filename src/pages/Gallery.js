@@ -62,7 +62,7 @@ export const Gallery = () => {
   </video>
   {/* <FaPlayCircle/> */}
   {!isPlaying && 
-    <MdPlayCircleFilled  size={60} style={{position:'absolute', top:'50%', left:'50%', transform:'translate(-50%,-50%)', zIndex:'1', cursor:'pointer'}} onClick={togglePlay} />
+    <MdPlayCircleFilled className='play-button'  size={60} style={{position:'absolute', top:'50%', left:'50%', transform:'translate(-50%,-50%)', zIndex:'1', cursor:'pointer'}} onClick={togglePlay} />
     // <>Paused</>
   }
   </div>
