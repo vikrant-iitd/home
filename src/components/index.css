@@ -8,7 +8,7 @@
 }
 .mainComp2 {
   background: url("./unnamed.jpg");
-  height: 40vh;
+  min-height: 40vh;
   width: 100%;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */

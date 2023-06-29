@@ -44,9 +44,10 @@ export const Gallery = () => {
       </div>
     </div>
   </div>
+  <div className='container' >
 
-  <div className='row' style={{display:'flex', justifyContent:'center'}}>
-  <div className='col-sm-8' style={{position:'relative'}}>
+  <div className='row' style={{display:'flex', justifyContent:'center', padding:'0px'}}>
+  <div className='col-sm-12 col-md-8' style={{position:'relative'}}>
   <div className="row" >
         <div className="col-md-4 col-sm-12">
           <h1 style={{ color: "black" }}>
@@ -66,7 +67,7 @@ export const Gallery = () => {
     // <>Paused</>
   }
   </div>
-  <div className='col-sm-8' style={{marginTop:'20px'}}>
+  <div className='col-sm-12 col-md-8' style={{marginTop:'20px'}}>
   <div className="row" >
         <div className="col-md-4 col-sm-12">
           <h1 style={{ color: "black" }}>
@@ -75,9 +76,10 @@ export const Gallery = () => {
           </h1>
         </div>
       </div>
-      <div className='row' style={{display:'flex',justifyContent:'center',  width:'100%'}}>
+      <div className='row' style={{display:'flex',justifyContent:'center'}}>
           <Slider images={images}/>
-      </div>
+  </div>
+  </div>
   </div>
   </div>
   </div>
