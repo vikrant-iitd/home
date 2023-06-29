@@ -58,7 +58,8 @@ export const Gallery = () => {
         </div>
       </div>
   <video ref={vidRef} style={{width:'100%', height:'40vh',boxShadow:'0px 0px 10px #afafaf'}} onPlay={handlePlay} onPause={handlePause} controls>
-    <source src="/outout.mp4" type='video/mp4'/>
+    <source src="/outout.mp4" type='video/mp4; codecs="avc1.4d002a, mp4a.40.2"'/>
+    Your Browser Is not Supporting MP4 File
     {/* {isPlaying && <button onClick={handlePause}>Pause</button>} */}
   </video>
   {/* <FaPlayCircle/> */}
