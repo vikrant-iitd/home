@@ -1,6 +1,6 @@
-import React, { useState, useEffect,useRef } from 'react';
+import React, { useState} from 'react';
 import './Carousel.css';
-import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
+// import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 // import Slider from 'react-touch-drag-slider';
 // import { Carousel } from '3d-react-carousal';
 
@@ -11,10 +11,9 @@ const Slider = ({ images }) => {
     setCurrentIndex(idx);
   }
   return(
-  <div className='row'>
-    <div className='middle-image col-sm-12'
+  <div col-sm-12>
+    <div className='middle-image '
     style={{backgroundImage:"url('"+images[currentIndex]+"')", marginBottom:'10px', boxShadow:'0px 0px 10px #afafaf'}}>
-      
     </div>
     <div className='col-sm-12' style={{display:'flex', justifyContent:'center'}}>
           {images.map((item,idx)=>{

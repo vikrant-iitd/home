@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 // import Projects from "../components/Projects";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import { Container, Row, Col } from "react-bootstrap";
+// import { Container, Row, Col } from "react-bootstrap";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import { Typography } from "@mui/material";
-import { FiArrowDown } from "react-icons/fi";
-import {IoIosArrowDown} from "react-icons/io"
+// import { FiArrowDown } from "react-icons/fi";
+// import {IoIosArrowDown} from "react-icons/io"
 
 export const Experience = () => {
-  const [show,setShow]= useState([0,0,0,0,0,0,0])
+  // const [show,setShow]= useState([0,0,0,0,0,0,0])
   return (
     <>
       <div className="mainComp">

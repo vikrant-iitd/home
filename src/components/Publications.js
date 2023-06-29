@@ -1,8 +1,8 @@
 import React from 'react'
 import './index.css';
 import { Button, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
-import { BsArrowRight } from 'react-icons/bs';
+// import { Link } from 'react-router-dom';
+// import { BsArrowRight } from 'react-icons/bs';
 function Publications() {
   return (
     <>

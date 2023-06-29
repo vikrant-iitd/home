@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 import Tooltip from "@mui/material/Tooltip";
 import { RxCross1 } from "react-icons/rx";
 export const Header = () => {
-  const [isScrolled, setScrolled] = useState(0);
   const [shrink, setShrink] = useState("expand");
-  const [dark, setDark] = useState(localStorage.getItem("theme") || "");
   const [shrinkLogo, setShrinkLogo] = useState("");
   window.addEventListener("scroll", () => {
     if (window.scrollY >= 10) {
@@ -18,10 +16,7 @@ export const Header = () => {
       setShrinkLogo("");
     }
   });
-  const toggleMenu = () => {
-    console.log("hi");
-  };
-  const [isActive, setActive] = useState("");
+  // const [isActive, setActive] = useState("");
   const [hidden, setHidden] = useState(1);
 
   // document.addEventListener('click', (e) => {

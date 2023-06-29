@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import { Button, Typography } from "@mui/material";
+// import { Button, Typography } from "@mui/material";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 export const Home = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -96,7 +96,7 @@ export const Home = () => {
             <img
               src={images[currentImageIndex]}
               style={{ height: "100%" }}
-              alt="Carousel Image"
+              alt="Carousel"
             />
           </div>
           <button onClick={goToNextImage}>

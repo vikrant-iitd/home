@@ -1,6 +1,6 @@
 import React from 'react'
 import { BiCopyright } from 'react-icons/bi';
-import { CgDarkMode, CgMenu } from 'react-icons/cg';
+import { CgDarkMode } from 'react-icons/cg';
 import { BsLinkedin, BsTwitter ,BsDot} from 'react-icons/bs'
 export const Footer = () => {
     return (

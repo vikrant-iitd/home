@@ -7,7 +7,7 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import { Container, Row, Col } from "react-bootstrap";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import Modal from "@mui/material/Modal";
+// import Modal from "@mui/material/Modal";
 // import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 // import TimelineDot from '@mui/lab/TimelineDot';
 // import FastfoodIcon from '@mui/icons-material/Fastfood';
@@ -33,10 +33,6 @@ export const Content = () => {
   const [readMore, setReadMore] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
   const [videoSelected, setVideoSelected] = useState(0);
-  const [open, setOpen] = useState(0);
-  const mouseEnterVid = () => {
-    setVideoSelected(1);
-  };
 
   const handleMouseEnter = (index) => {
     setActiveIndex(index);

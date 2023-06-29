@@ -22,8 +22,7 @@
 }
 .middle-image{
   transition: all 0.3s ease-in;
-  width:40vw;
-  height: 40vh;
+  height: 50vh;
   background-color: #fafafa;
   background-position: center;
   background-repeat: no-repeat;

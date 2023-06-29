@@ -1,13 +1,13 @@
 import React from "react";
 import "../components/index.css";
-import { Button, Typography } from "@mui/material";
+import {  Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 // import Typography from '@mui/material/Typography';
-import { CardActionArea, CardActions } from "@mui/material";
-import { Link } from "react-router-dom";
-import { BsArrowRight } from "react-icons/bs";
+import { CardActionArea } from "@mui/material";
+// import { Link } from "react-router-dom";
+// import { BsArrowRight } from "react-icons/bs";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 

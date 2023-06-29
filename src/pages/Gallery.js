@@ -6,7 +6,7 @@ import {MdPlayCircleFilled} from 'react-icons/md';
 // import Carousel from '../components/Carousel'
 
 export const Gallery = () => {
-    const [images,setImages]=useState(['/img1.png','/img2.png','/img3.png','/img4.png','/img5.png','/img6.png'])
+    const images=['/img1.png','/img2.png','/img3.png','/img4.png','/img5.png','/img6.png'];
     const [isPlaying,setIsPlaying]= useState(0);
     const vidRef = useRef(null);
     const togglePlay = () => {
@@ -75,8 +75,8 @@ export const Gallery = () => {
           </h1>
         </div>
       </div>
-      <div className='col-sm-12'>
-  <Slider images={images}/>
+      <div className='row' style={{display:'flex',justifyContent:'center',  width:'100%'}}>
+          <Slider images={images}/>
       </div>
   </div>
   </div>
