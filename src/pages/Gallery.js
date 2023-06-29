@@ -32,7 +32,7 @@ export const Gallery = () => {
     <br></br>
     <br></br>
     <br></br>
-    <br></br>how to hide play button 
+    <br></br> 
     <br></br> <br></br>
     <div className="container">
       <div className="row" style={{ justifyContent: "center" }}>
