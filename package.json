@@ -52,15 +52,15 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pallavsemwal/ks_vikrant.git"
+    "url": "git+https://github.com/vikrant-work-website/website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pallavsemwal/ks_vikrant/issues"
+    "url": "https://github.com/vikrant-work-website/website/issues"
   },
-  "homepage": "https://github.com/pallavsemwal/ks_vikrant#readme",
+  "homepage": "https://github.com/vikrant-work-website/website",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
