@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "59ee7f77d08354952b40",
+    "revision": "24fa35875e8790789d84",
     "url": "/home/static/css/main.4550dd26.chunk.css"
   },
   {
-    "revision": "59ee7f77d08354952b40",
-    "url": "/home/static/js/main.59ee7f77.chunk.js"
+    "revision": "24fa35875e8790789d84",
+    "url": "/home/static/js/main.24fa3587.chunk.js"
   },
   {
     "revision": "9882eeb9f97ab04507de",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/home/static/media/iitkanpur.12733ea0.png"
   },
   {
-    "revision": "5182bd1aabc31c0f26c02946d26b6bf5",
+    "revision": "b50f4221df98c4e59d8d59f7ac0a82ca",
     "url": "/home/index.html"
   }
 ];
