@@ -60,7 +60,7 @@
   "bugs": {
     "url": "https://github.com/vikrant-work-website/website/issues"
   },
-  "homepage": "https://github.com/vikrant-work-website/website",
+  "homepage": "https://vikrant-work-website.github.io/website/",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
